@@ -4,16 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 4</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fresh-Eats</title>
 </head>
 <body>
-        <h1>Your Webpack installation is working</h1>
-        <img src="./assets/media/bear.jpg" alt="bear">
-        <img src="./assets/media/kiwi.svg" alt="kiwi">
-        <audio controls>
-            <source src="./assets/media/horse.ogg" type="audio/ogg">
-          Your browser does not support the audio element.
-          </audio>
-    
+    <nav>
+        <div class="navbar">
+         <div class="header-right">
+           <a href="#"><i class="fa fa-fw fa-facebook"></i></a> 
+           <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
+           <a class="active" href="#how">How It Works</a>
+           <a href="#menu">View Our Menu</a>
+           <a href="#plan">Choose A Plan</a>
+          </div>
+         </div>
+        </nav>
+       <section>
+          <div>
+           <img src="./assets/media/landing-image.jpg" width="100%"> 
+           <div class="logo">
+               <img src="./assets/media/fresh-eats-logo.png" width="35%">
+           </div>
+           <button>LOGIN</button> 
+           <button>SIGNUP</button>  
+         </div>
+       </section>
+       <section>
+       <div class="container">
+           <h1>OUR RESTAURANTS</h1>
+        <div class="absolute-container">
+           <img src="./assets/media/BYOM.jpg" width="25%">
+           <H3>HOW IT WORKS</H3>
+           <p>With Fresh eats our customers comes first</p>
+           <h6>You request, we provide</h6>
+         <div>
+           <img src="./assets/media/monika-grabkowska-513682-unsplash.jpg" width="25%">
+           <h3>View Our Menu</h3>
+           <p>We offer many varietees of food</p>
+           <p>To learn more, and view our diverse menu click</p>
+           <button>LEARN MORE</button>
+        </div>
+         </div>
+         <div>
+           <img src="./assets/media/ourveganoptions.jpg" width="25%">
+           <h3>Choose A Plan</h3>
+           <p>We offer a variety of plans to meet the need of our customers</p>
+           <p>To learn more, choose from our options</p>
+           <button>BRONZE</button>
+           <button>SILVER</button>
+           <button>GOLD</button>
+        </div>
+       </section>
+       <section>
+           <div class="container">
+           <img src="./assets/media/Lunch 1.jpg" width="25%">
+           <H1>HOW IT WORKS</H1>
+        <div class="login-form">
+        <form action="/example.html" method="POST">
+         <label for="user-email">Email:</label> 
+         <input type="text" name="" value="">
+         <br><br>
+         <label for="user-password">Password:</label>
+         <input type="password" name=" user-password" value="">
+         <br><br>
+         <input type="submit" value="LOGIN">
+         </form> 
+        <p>If you click the "LOGIN" button, Customer will be transfer to our main pages to view the menu of the day</p>
+        </div>
+        <div class=subscribe-form>
+        <form action="/example.html" method="POST">
+        First name:<br>
+         <input type="text" name="firstname"><br>
+         Last name:<br>
+         <input type="text" name="lastname">
+         <br><br>
+        <label for="user-email">Email:</label> 
+         <input type="text" name="" value="">
+         <br><br>
+         <label for="user-password">Password:</label>
+         <input type="password" name=" user-password" value="">
+         <br><br>
+         <input type="submit" value="SIGNUP">
+        </form> 
+        <p>If you click the "SIGNUP" button, New customers will be subscribe to our mailing list for future deals and offers</p>
+        </div>
+        </div>
+       </section>
+       <section>
+          <h1>VIEW OUR MENU</h1>
+          <ul class="slides">
+           <input type="radio" name="radio-btn" id="img-1" checked />
+           <li class="slide-container">
+             <div class="slide">
+                <img src="./assets/media/breakfastspecials.jpg" width="25%"/>
+               </div>
+             <div class="nav">
+                <label for="img-6" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+             </div>
+           </li>
+           <input type="radio" name="radio-btn" id="img-2" />
+           <li class="slide-container">
+               <div class="slide">
+                 <img src="./assets/media/Breakfast2.jpg" width="25%"/>
+               </div>
+             <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+             </div>
+           </li>
+           <input type="radio" name="radio-btn" id="img-3" />
+           <li class="slide-container">
+               <div class="slide">
+                 <img src="./assets/media/Lunchspecial.jpg" width="25%"/>
+               </div>
+             <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+             </div>
+           </li>
+           <input type="radio" name="radio-btn" id="img-4" />
+           <li class="slide-container">
+               <div class="slide">
+                 <img src="./assets/media/Lunchspecial2.jpg" width="25%"/>
+               </div>
+             <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-5" class="next">&#x203a;</label>
+             </div>
+           </li>
+           <input type="radio" name="radio-btn" id="img-5" />
+           <li class="slide-container">
+               <div class="slide">
+                 <img src="./assets/media/dinner2.jpg" width="25%" />
+               </div>
+             <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-6" class="next">&#x203a;</label>
+             </div>
+           </li>
+           <input type="radio" name="radio-btn" id="img-6" />
+           <li class="slide-container">
+               <div class="slide">
+                 <img src="./assets/media/dinner1.jpg" width="25%"/>
+               </div>
+             <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+             </div>
+           </li>
+           <li class="nav-dots">
+             <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+             <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+             <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+             <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+             <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+             <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+           </li>
+       </ul>
+       </section>
+       <section>
+          <h2>Choose A Plan</h2>
+       <div class="row">
+         <div class="column" style="background-color:#aaa;">
+           <h2>BREAKFAST SPECIAL</h2>
+           <p>Some text..</p>
+         </div>
+         <div class="column" style="background-color:#bbb;">
+           <h2>LUNCH SPECIALS</h2>
+           <p>Some text..</p>
+         </div>
+         <div class="column" style="background-color:#ccc;">
+           <h2>DINNER SPECIAL</h2>
+           <p>Some text..</p>
+         </div>
+       </div>
+    </section>
+     <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+         <a href="#"><i class="fa fa-fw fa-twitter"></i></a> 
+         <a href="#"><i class="fa fa-fw fa-Pintrest"></i></a>
+         <p class="w3-medium">
+         Powered by <a href="http://www.cyntechvisuals.com" target="_blank">cyntechvisuals.com</a>
+         </p>
+     </footer>
 </body>
 </html>
