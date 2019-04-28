@@ -1,37 +1,156 @@
 body {
-   background: #ffe8e1a3;
-   min-width: 75%;
+    background: #ffe8e1a3;
+    min-width: 75%;
 }
+
 .navbar {
     padding: 30px;
     text-align: center;
     width: 100%;
-    background-color: transparent;
-    overflow: auto;   
-  }
-  
-  .navbar a {
+    background: #ffd1c2;
+    overflow: auto;
+}
+
+.navbar a {
     display: inline;
-    padding: 40px;
+    padding: 5px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 20px; 
-  }
-  
-  .navbar a:hover {
-    background-color: #000;
-  }
+    font-size: 1.5em;
+}
 
-  @media screen and (max-width: 500px) {
+.navbar a:hover {
+    background: #f8fdf0;
+}
+
+@media screen and (max-width: 500px) {
     .navbar a {
-      float: none;
-      display: block;
+        float: none;
+        display: block;
     }
-  }
-  .logo {
+}
+
+.landing {
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.74);
+}
+
+.logo {
     position: absolute;
-    bottom: 33.5%;
+    bottom: 10%;
+    min-width: 75%;
+    text-align: right;
+    margin-right: 30em;
+}
+
+.topbutton {
+    width: 25%;
+    overflow: visible;
+    padding: 10px;
+    margin: 10px;
+    background-color: #eea793;
+    color: black;
+    font-size: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.74);
+    float: right;
+}
+
+@media screen and (max-width: 320px) {
+    .topbutton {
+        background: #ffe8e1;
+    }
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #f8fdf0;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    min-width: 50%;
-    padding-top: 70px;
+    padding: 20px 0;
+    font-size: 1em;
+}
+
+.middlebutton {
+    display: inline;
+    width: 50%;
+    overflow: visible;
+    padding: 10px;
+    background-color: #eea793;
+    font-size: 0.5em;
+    border-radius: 5em;
+    box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.74);
+    margin-bottom: 10px;
+}
+
+.aboutus {
+    margin-top: 1em;
+    padding: 3em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-gap: 20px;
+    background-color: #ffd0c2;
+}
+
+.grid-container2 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 1em;
+}
+
+.item1 { grid-area: 1 / 1 / 2 / 2; }
+.item2 { grid-area: 1 / 2 / 2 / 3; }
+.item3 { grid-area: 1 / 3 / 2 / 4; }
+.item4 { grid-area: 2 / 1 / 3 / 2; }
+.item5 { grid-area: 2 / 2 / 3 / 3; }
+.item6 { grid-area: 2 / 3 / 3 / 4; }
+
+.grid-container3 {
+    display: grid;
+    grid-auto-rows: 50%;
+    grid-gap: 10px;
+    background-color: #eea793;
+    padding: 10px;
+}
+
+.grid-container3 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.plan {
+    display: block;
+    width: 50%;
+    overflow: visible;
+    padding: 40px;
+    margin: 10px auto;
+    background-color: #eea793;
+    color: #000;
+    font-size: 2em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.74);
+}
+
+.finish {
+    display: block;
+    background: #ffd1c2;
+    color: black;
+    padding: 100px;
+    text-align: center;
+    font-size: 2em;
 }
